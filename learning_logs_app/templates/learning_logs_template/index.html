@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+
+<body>
+
+    {%extends "learning_logs_template/base.html"%}
+
+    {%block header%}
+    <div class="jumbotron">
+        <h2>Track your learning.</h2>
+    </div>
+    {%endblock header%}
+
+
+
+
+    {%block content%}
+    <h3>
+        <a href="{%url 'users:register'%}">Register an account</a> to make
+        your own Learning Log, and list the topics you're learning about.
+
+    </h3>
+
+    <h3>
+        Whenever you learn something new about a topic, mae an entry summarizing what you've learned
+    </h3>
+    {%endblock content%}
+
+
+</body>
+
+</html>
